@@ -286,16 +286,52 @@
                     </div>
                 </div>
                 <div class="col-5">
-                    <div class="mb-3">
-                        <label for="exampleInputName1" class="form-label">Имя</label>
-                        <input type="name" class="form-control" id="exampleInputName1">
+                    <div class="card mb-3 rounded-3 shadow-sm">
+                        <div class="mb-3">
+                            <label for="exampleInputName1" class="form-label">Имя</label>
+                            <input type="name" class="form-control" id="exampleInputName1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                   aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">Введите свой email-адрес.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">Введите свой email-адрес.</div>
+                </div>
+            </div>
+            <div class="px-4 py-3 my-3 text-center width=100%">
+                <h1 class="display-5 fw-bold text-body-emphasis">FAQ</h1>
+            </div>
+            <p class="d-inline-flex gap-1">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+                   aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                        aria-controls="multiCollapseExample2">Toggle second element
+                </button>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+                        aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both
+                    elements
+                </button>
+            </p>
+            <div class="row">
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+                            Some placeholder content for the first collapse component of this multi-collapse example.
+                            This panel is hidden by default but revealed when the user activates the relevant trigger.
+                        </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body">
+                            Some placeholder content for the second collapse component of this multi-collapse example.
+                            This panel is hidden by default but revealed when the user activates the relevant trigger.
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
