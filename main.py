@@ -12,6 +12,11 @@ class MyServer(BaseHTTPRequestHandler):
     """
 
     def __get_html_content(self):
+        """
+        Читаем страницу в формате html
+        :return: возврат прочитанный текст
+        """
+        
         with open(os.path.join('html', 'index.html'), 'r', encoding='utf-8') as file:
             file = file.read()
             return file
@@ -30,6 +35,8 @@ class MyServer(BaseHTTPRequestHandler):
 
 if __name__ == "__main__":
 
+    # Инициализация веб-сервера, который по заданным параметрам в сети будет
+    # принимать запросы и отправлять их на обработку специальному классу, описанному выше
     webServer = HTTPServer((hostName, serverPort), MyServer)
     print("Server started http://%s:%s" % (hostName, serverPort))
     try:
